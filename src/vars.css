@@ -1,0 +1,12 @@
+:root {
+  /* Colors */
+  --color-primary: #2d2e32;
+  --color-primary-light: #767676;
+  --color-secondary: #147efb;
+  --color-bg: #fff;
+  --color-bg-grey: #f9f9f9;
+
+  /*Fonts*/
+  --font-mulish: "Mulish", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+}
