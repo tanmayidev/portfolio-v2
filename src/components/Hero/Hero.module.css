@@ -1,14 +1,9 @@
 @import "../../vars.css";
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 10%;
-  height: 100vh;
-  width: 100vw;
   background-color: var(--color-bg-grey);
-  position: absolute;
+  margin: 2rem auto;
+  padding: 4rem 8rem;
 }
 
 .content {
@@ -66,6 +61,7 @@
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 @keyframes floating {
@@ -112,4 +108,62 @@
   border-radius: 10px;
   height: 50px;
   width: 50px;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    padding: 4rem 0.5rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .details {
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .skills {
+    margin: 1rem 0.5rem;
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills p {
+    font-family: var(--font-mulish);
+    color: var(--color-primary);
+    line-height: 1;
+    font-weight: 500;
+    margin: 0 0 2rem 0;
+    padding: 0 0 1rem 0;
+    border-right: none;
+    border-bottom: 2px solid rgba(45, 46, 50, 0.5);
+  }
+
+  .skillItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .imgContainer img {
+    height: 15rem;
+    width: 15rem;
+  }
 }
