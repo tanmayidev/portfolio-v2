@@ -51,13 +51,5 @@
   {
     "title": "Figma",
     "imageSrc": "skills/figma.png"
-  },
-  {
-    "title": "Docker",
-    "imageSrc": "skills/docker.png"
-  },
-  {
-    "title": "Jenkins",
-    "imageSrc": "skills/jenkins.png"
   }
 ]

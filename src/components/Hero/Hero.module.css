@@ -1,0 +1,115 @@
+@import "../../vars.css";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--color-bg-grey);
+  position: absolute;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 35rem;
+  margin-right: 3rem;
+}
+
+.title {
+  color: var(--color-primary);
+  font-size: 3rem;
+  line-height: 1.2;
+  margin: 1rem 0;
+  font-weight: 900;
+}
+
+.description {
+  color: var(--color-primary-medium);
+  font-family: var(--font-mulish);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 1rem 0 2rem 0;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.socialLink {
+  font-size: 2rem;
+  border-radius: 1rem;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.imgContainer img {
+  background-color: rgb(219, 199, 238);
+  box-shadow: 0 4px 5px 4px #a89e9b, 4px 5px 4px #a89e9b;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--color-primary-light);
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.skills p {
+  font-family: var(--font-mulish);
+  color: var(--color-primary);
+  line-height: 1;
+  font-weight: 500;
+  margin-right: 4rem;
+  padding-right: 2rem;
+  border-right: 2px solid rgba(45, 46, 50, 0.5);
+}
+
+.skillItems {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.skillImg {
+  border-radius: 10px;
+  height: 50px;
+  width: 50px;
+}
