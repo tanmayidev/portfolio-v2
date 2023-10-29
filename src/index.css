@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext");
+
+* {
+  box-sizing: border-box; /* border is considered when calculating widht and height of the object*/
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
