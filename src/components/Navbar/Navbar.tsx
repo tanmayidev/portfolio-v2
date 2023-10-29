@@ -46,7 +46,7 @@ export const Navbar = () => {
         </ul>
       </div>
       {/* Mobile Nav */}
-      <div className={`${styles.mobile} ${menuOpen && styles.mobileMenu}`}>
+      <div className={`${styles.mobile} ${menuOpen ? styles.mobileMenu : ""}`}>
         <span className={styles.menuClose}>
           <FontAwesomeIcon
             icon={faXmark}
