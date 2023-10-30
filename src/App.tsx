@@ -9,7 +9,8 @@ function App() {
   return (
     <div>
       <Navbar />
-      {/* <Hero />
+      <Hero />
+      {/*
       <About />
       <Experience />
       <Projects />
