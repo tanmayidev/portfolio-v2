@@ -6,8 +6,8 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 0 auto;
-  padding: 2rem 8rem;
+  height: 14vh;
+  padding: 2rem 10rem;
   top: 0;
   left: 0;
   position: fixed;
@@ -41,10 +41,13 @@
   font-weight: 600;
   text-decoration: none;
   transition: all 0.23s;
+  /* padding: 0.6rem 0.8rem;
+  border-radius: 0.5rem; */
 }
 
 .menuItems a:hover {
   color: var(--color-secondary);
+  /* background-color: var(--color-ternary); */
 }
 
 .menuBtn {
@@ -56,10 +59,10 @@
   display: none;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 980px) {
   .navbar {
     display: flex;
-    padding: 2rem 1rem;
+    padding: 2rem 6rem;
   }
 
   .menuBtn {
@@ -89,7 +92,7 @@
   .menuClose {
     position: absolute;
     font-size: 1.8rem;
-    right: 1rem;
+    right: 2rem;
     top: 4.5%;
   }
 
@@ -121,5 +124,12 @@
   .menuOpen {
     display: flex;
     z-index: 1;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .navbar {
+    display: flex;
+    padding: 2rem 2rem;
   }
 }

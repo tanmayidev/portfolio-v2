@@ -6,7 +6,7 @@ import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 
 export const Hero = () => {
   return (
-    <section id="#home" className={styles.container}>
+    <section id="#home" className={styles.heroContainer}>
       <div className={styles.content}>
         <div className={styles.details}>
           <h1 className={styles.title}>Software Engineer</h1>
@@ -30,6 +30,7 @@ export const Hero = () => {
         <p>Tech Stack</p>
         <div>
           <ul className={styles.skillItems}>
+            {/* TODO: Add Jenkins docker image and remove sql, mongoDB. Kubernetes? */}
             {skills.map((skill, id) => (
               <li key={id}>
                 <img
