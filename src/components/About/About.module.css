@@ -1,0 +1,123 @@
+@import "../../vars.css";
+
+.aboutContainer {
+  background-color: var(--color-bg);
+  height: 86vh;
+  padding: 4rem 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imgContainer img {
+  margin-right: 4rem;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  justify-content: flex-start;
+}
+
+.heading {
+  color: var(--color-secondary);
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.subHeading {
+  color: var(--color-primary);
+  font-family: var(--font-poppins);
+  font-size: 1.6rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.description {
+  color: var(--color-primary-light);
+  font-family: var(--font-mulish);
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutContainer {
+    padding: 4rem 8rem;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imgContainer img {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+
+  .details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: max-content;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .subHeading {
+    text-align: center;
+  }
+
+  .description {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .aboutContainer {
+    padding: 4rem 2rem 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imgContainer img {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 0.5rem;
+  }
+
+  .details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: max-content;
+  }
+
+  .heading {
+    text-align: center;
+  }
+
+  .subHeading {
+    text-align: center;
+  }
+
+  .description {
+    text-align: center;
+  }
+}
